@@ -1,0 +1,38 @@
+safe: false
+port: 9005
+base-url:    /
+
+plugins:
+  - jekyll-sitemap
+
+source:      ./source/site
+destination: ./.publish
+plugins_dir: ./source/site/_plugins
+
+future:      true
+lsi:         false
+highlighter: true
+markdown:    kramdown
+permalink:   blog/:title
+
+rdiscount:
+  extensions: []
+
+# Kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: false
+
+exclude: [
+  README.md,
+  CHANGELOG.md
+ ]
+
+# Custom vars
+current_version:  1.0.0
+site: https://gmachina.org
+author: Tyler Rilling

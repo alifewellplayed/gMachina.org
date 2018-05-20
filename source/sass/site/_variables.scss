@@ -1,0 +1,13 @@
+$primary: #8d8273 !default;
+$secondary: #ffd152 !default;
+
+$body-bg:  #353537 !default;
+$body-color: $primary !default;
+
+$font-family-sans-serif:  Roboto, 'Roboto', "Helvetica Neue", Arial, sans-serif, !default;
+$font-family-serif:  'Vollkorn', serif !default;
+$headings-font-family: $font-family-serif !default;
+
+$font-weight-base: 300 !default;
+
+$link-color: lighten($primary, 25%) !default;

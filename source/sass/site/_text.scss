@@ -1,0 +1,31 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 2px;
+  color: $white;
+  text-transform: uppercase;
+}
+.lead {color: $link-color; }
+.h6 { color: $link-color; }
+
+h2 {
+  position: relative;
+  font-size: 1.25rem;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: $secondary;
+  }
+}
+h3 {
+  color: #78b0a0;
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
