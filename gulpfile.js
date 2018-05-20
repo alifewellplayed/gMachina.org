@@ -188,7 +188,7 @@ gulp.task('build', function(callback) {
 // Deploy to github
 gulp.task('github', function(callback) {
   runSequence(
-    'clean', 'build', 'jekyll', 'github-deploy', callback
+    'build', 'jekyll', 'github-deploy', callback
   );
 });
 
