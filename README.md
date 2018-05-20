@@ -1,1 +1,1 @@
-Website for gMachina.net.
+Website for gMachina.org.
