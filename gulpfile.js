@@ -14,7 +14,7 @@ concat = require('gulp-concat');
 autoprefixer = require('gulp-autoprefixer');
 cleanCSS = require('gulp-clean-css');
 rename = require('gulp-rename'); // to rename any file
-uglify = require('gulp-uglify');
+uglify = require('gulp-uglify-es').default;
 del = require('del');
 stylish = require('jshint-stylish');
 runSequence = require('run-sequence');
@@ -107,6 +107,9 @@ gulp.task('concat-js', function() {
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/pace-progress/pace.js',
     'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    'node_modules/@webcomponents/shadydom/shadydom.min.js',
+    'node_modules/@webcomponents/custom-elements/custom-elements.min.js',
+    'node_modules/css-doodle/css-doodle.js',
     'source/js/site.js',
     // Coffeescript
     'source/js/coffee/*.*',

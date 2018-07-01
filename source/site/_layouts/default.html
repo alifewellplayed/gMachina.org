@@ -39,23 +39,55 @@
 </head>
 <body>
 <div id="wrapper" class="mx-3 ml-md-5">
-  <header class="site-header my-5">
-    <a class="site-logo d-block mb-4" href="/">
-      <h1 class="sr-only">gMachina</h1>
-      <h6 class="sr-only">A Ghost in the Machine</h6>
-      <div class="logo__inner"></div>
-      <div class="logo__inner2"></div>
-    </a>
-    <p class="lead mb-0">gMachina (Gee-<strong>mah</strong>-kee-nə)</p>
-    <p>A ghost in the machine.</p>
-  </header>
-  <div class="site-content">
-    {{ content }}
+  <div class="row no-gutters">
+    <div class="col-md-7">
+      <header class="site-header my-5">
+        <a class="site-logo d-block mb-4" href="/">
+          <h1 class="sr-only">gMachina</h1>
+          <h6 class="sr-only">A Ghost in the Machine</h6>
+          <div class="logo__inner"></div>
+          <div class="logo__inner2"></div>
+        </a>
+        <p class="lead mb-0">gMachina (Gee-<strong>mah</strong>-kee-nə)</p>
+        <p>A ghost in the machine.</p>
+      </header>
+      <div class="site-content">
+          {{ content }}
+      </div>
+      <footer class="site-footer py-5">
+        <small>&copy; 2018 <a href="https://alifewellplayed.com">A Life Well Played</a> &amp; <a href="https://tyler.codes">Tyler Rilling</a>.</small>
+      </footer>
+    </div>
+    <div class="col-md-5">
+      <div class="data-wrapper">
+      <css-doodle>
+        :doodle {
+          @grid: 1x10 / 100vmin;
+        }
+        @place-cell: center;
+        @size: calc(@index() * 10%);
+        border-radius: 50%;
+        border-style: dashed;
+        border-width: calc(@index() * 1vmin);
+        border-color: hsla(
+          calc(20 * @index()), 10%, 98%,
+          calc(3 / @index() * .8)
+        );
+
+        --d: @rand(30s, 50s);
+        --rf: @rand(360deg);
+        --rt: calc(var(--rf) + @pick(1turn, -1turn));
+
+        animation: spin var(--d) linear infinite;
+        @keyframes spin {
+          from { transform: rotate(var(--rf)) }
+          to   { transform: rotate(var(--rt)) }
+        }
+      </css-doodle>
+      </div>
+    </div>
   </div>
-	<footer class="site-footer py-5">
-		<small>&copy; 2018 <a href="https://alifewellplayed.com">A Life Well Played</a> &amp; <a href="https://tyler.codes">Tyler Rilling</a>.</small>
-	</footer>
-	</div>
+</div>
 	<script src="/assets/js/site.js"></script>
 </body>
 </html>

@@ -13,4 +13,4 @@ gMachina is currently still in early prototype stages. Right now there is no off
 The game is being built in Python 3 and Django.
 
 ### How can I keep up with development?
-You can, and should, follow [@gmachinaGame](http://twitter.com/gmachinaGame) and [@ALifeWellPlayed](http://twitter.com/alifewellplayed) on Twitter and on [Instagram](http://instagram.com/alifewellplayed).
+You can, and should, follow [@underlost](http://twitter.com/underlost) and [@ALifeWellPlayed](http://twitter.com/alifewellplayed) on Twitter and on [Instagram](http://instagram.com/alifewellplayed).

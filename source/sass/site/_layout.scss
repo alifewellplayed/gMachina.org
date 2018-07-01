@@ -1,5 +1,5 @@
 #wrapper {
-	max-width: 640px;
+	//max-width: 640px;
 }
 .site-logo,
 .logo__inner,
@@ -36,4 +36,12 @@
     text-align: center;
     a:link {color: darken($body-color, 25%);}
     a:hover {color: darken($body-color, 15%); text-decoration: none;}
+}
+
+
+.data-wrapper {
+  overflow: hidden;
+  position: fixed;
+  //top: -50vmin;
+  right: -60vmin;
 }
